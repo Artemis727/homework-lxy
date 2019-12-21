@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class TwtlibApp extends Component {
   constructor () {
@@ -8,7 +9,7 @@ class TwtlibApp extends Component {
     render()
     {
         return(
-            <body>
+            <div id = "body">
                 <div id = "header">
                     <span className = "logo"></span>
                     <span className = "login"></span>
@@ -19,7 +20,9 @@ class TwtlibApp extends Component {
                         <input className = "Research" placeholder = "请输入关键字检索"></input>
                     </span>
                     <span className = "Button-Research">
-                        <button className = "research-button">检索</button>
+                        <Link to="/TwtlibList">
+                            <button className = "research-button" onclick = "">检索</button>
+                        </Link>
                     </span>
                 </div>
 
@@ -31,7 +34,7 @@ class TwtlibApp extends Component {
                         POWERED BY TWT STUDIO @ 2000-2020
                     </div>
                 </div>
-            </body>
+            </div>
         )
     }
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TwtlibApp from './TwtlibApp';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import './index.css'
 
 ReactDOM.render(
-    <TwtlibApp />,
+    <App />,
     document.getElementById('root')
-);
+)
 
 
